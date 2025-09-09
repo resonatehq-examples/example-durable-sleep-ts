@@ -5,10 +5,10 @@ const resonate = Resonate.remote({
   group: "workers",
 });
 
-function* sleepingWorkflow(ctx: Context, duration: number) {
-  console.log(`Sleeping for ${duration} seconds...`);
-  yield ctx.sleep(duration * 1000);
-  return `Slept for ${duration} seconds`;
+function* sleepingWorkflow(ctx: Context, ms: number) {
+  console.log(`Sleeping for ${ms / 1000} seconds...`);
+  yield ctx.sleep(ms);
+  return `Slept for ${ms / 1000} seconds`;
 }
 
 resonate.register("sleepingWorkflow", sleepingWorkflow);

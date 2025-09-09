@@ -8,15 +8,15 @@ This example application showcases the Context.sleep() API that enables a functi
 
 ## Problem
 
-A business process may need to sleep for a period of time that is much longer than the expected lifetime of a process.
+A business process may need to sleep for a period much longer than the typical lifetime of a process.
 
-In other words, a process is likely to crash the longer it is alive, and if a business process needs to suspend—or "sleep"—for days, weeks, or even years, developers are often forced to use cron jobs as a means to reawaken long sleeping processes.
+Since a process is more likely to crash the longer it is alive, and if a business process needs to suspend (or "sleep") for days, weeks, or even years, then developers are often forced to use cron jobs as a means to reawaken long-sleeping processes.
 
-This leads to complexity that is difficult to reason about, test, and trust.
+This leads to complexity that is hard to reason about, test, and rely on.
 
 ## Solution
 
-Resonate enables developers to handle that sleep directly in their workflows, reducing the complexity of the implementation while also knowing that it can survive process crashes.
+Resonate enables developers to sleep directly in their workflows without leaving the process running idle, reducing implementation complexity while ensuring the business process can survive across process crashes.
 
 ## How to run this example
 
@@ -27,7 +27,7 @@ brew install resonatehq/tap/resonate
 resonate serve
 ```
 
-If you don't have brew, try one of these other installation options: [https://docs.resonatehq.io/operate/server-installation](https://docs.resonatehq.io/operate/server-installation)
+If you don't have brew, try one of these other [installation options](https://docs.resonatehq.io/operate/server-installation).
 
 Install dependencies:
 

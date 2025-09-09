@@ -7,11 +7,11 @@ const resonate = Resonate.remote({
 try {
   const id = "sleep-workflow-2";
   const func = "sleepingWorkflow";
-  const dur = 5;
+  const ms = 5000;
   const result = await resonate.rpc(
     id,
     func,
-    dur,
+    ms,
     resonate.options({
       target: "poll://any@workers",
     })
