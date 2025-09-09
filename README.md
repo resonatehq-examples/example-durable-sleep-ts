@@ -24,7 +24,7 @@ Run a Resonate Server:
 
 ```
 brew install resonatehq/tap/resonate
-resonate serve
+resonate dev
 ```
 
 If you don't have brew, try one of these other [installation options](https://docs.resonatehq.io/operate/server-installation).
