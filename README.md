@@ -4,7 +4,7 @@
 
 **Resonate TypeScript SDK**
 
-This example application showcases the Context.sleep() API that enables a function to reliably sleep for days, weeks, or even years if needed.
+This example application showcases the sleep API that enables a function to reliably sleep for days, weeks, or even years if needed.
 
 ## Problem
 
