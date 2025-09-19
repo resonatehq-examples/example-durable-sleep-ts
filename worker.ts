@@ -6,7 +6,7 @@ const resonate = Resonate.remote({
 });
 
 function* sleepingWorkflow(ctx: Context, ms: number) {
-  console.log(`Sleeping for ${ms / 1000} seconds...`);
+  yield* ctx.run((ctx: Context) => console.log(`Sleeping for ${ms / 1000} seconds...`))
   yield ctx.sleep(ms);
   return `Slept for ${ms / 1000} seconds`;
 }
