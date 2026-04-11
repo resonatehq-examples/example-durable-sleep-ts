@@ -8,7 +8,7 @@ const resonate = new Resonate({
 
 function* sleepingWorkflow(ctx: Context, ms: number) {
   yield* ctx.run((ctx: Context) => console.log(`Sleeping for ${ms / 1000} seconds...`))
-  yield ctx.sleep(ms);
+  yield* ctx.sleep(ms);
   return `Slept for ${ms / 1000} seconds`;
 }
 
